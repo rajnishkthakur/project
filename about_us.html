@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>App development</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Orbitron:wght@700&family=Tangerine:wght@700&family=Yesteryear&display=swap" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+body{
+    margin:0px;
+    padding:0px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+ }
+ .bar {
+  overflow: hidden;
+  background-color: black;
+  padding-top: 8px;
+}
+
+.bar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.bar a:hover {
+  border-bottom:2px solid #00bed4;
+  color: #00bed4;
+}
+
+.bar a.active {
+  float: left;
+  /*background-color: #033354;*/
+  color: white;
+}
+
+.bar .icon {
+  display: none;
+}
+.bar img{
+  width: 80px;
+}
+h1{font-family: 'Yesteryear', cursive;
+}
+ 
+.img2{
+    padding:50px;
+   margin:0px auto; background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTrUe1V9QxbEpZ75VZtinQzDZH9R4gr6ryP5f3o9c3xig6p-iRY&usqp=CAU.jpg");
+   color:white;
+   font-size:20px;
+   font-weight:bold;
+   font-family: 'Orbitron', sans-serif;
+   text-shadow: 0px 0px 8px black;
+   
+}
+ 
+h1{
+    text-shadow:5px 3px 4px grey;
+     margin:10px;
+     text-align:center ;
+     
+}
+p{
+    text-align:center  ;
+    left:10px;
+    margin:20px;
+    
+}
+.box{
+    width: 513px;
+    
+    margin: 0 auto;
+    padding:20px;
+    background-color:goldenrod;
+    color:black;
+    box-shadow:20px 20px 10px black;
+    border-radius:20px;  
+
+
+ }
+.box1{
+    width: 513px;
+    border:none;
+    padding:20px;
+    background-color:#00bacf;
+    border-radius:10px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
+    margin:0 auto;
+    
+
+}
+h2{
+    text-align:center;
+    margin:20px;
+
+}
+.box2, .box3, .box4, .box5{
+  width: 480px;
+    border:2px solid black;
+    background-color:black;
+    border-radius:10px;
+    color:white;
+    text-align:center ;
+    box-shadow: 10px 10px 5px cyan;
+    margin:15px;
+    float: left;
+    position: relative;
+    
+    
+}
+
+/*.box3{
+   border:2px solid black;
+    background-color:black;
+    border-radius:10px;
+    color:white; 
+    margin-top:37px;
+    text-align:center;
+    box-shadow: 10px 10px 5px cyan;
+}
+.box4{
+   border:2px solid black;
+    background-color:black;
+    border-radius:10px;
+    color:white; 
+    margin-top:37px;
+    text-align:center;
+    box-shadow: 10px 10px 5px cyan;
+ 
+}
+.box5{
+    border:2px solid black;
+    background-color:black;
+    border-radius:10px;
+    color:white; 
+    margin-top:37px;
+    text-align:center  ; 
+    box-shadow: 10px 10px 5px cyan;
+}*/
+.box6{
+  width: 513px;
+  margin:auto;
+   border:none;
+    padding:20px;
+    background-color:#00bacf;
+    border-radius:10px;
+    margin-top:-47px;
+    margin-bottom: 28px;
+    
+}
+.box7{
+  border:2px solid black;
+    background-color:black;
+    border-radius:10px;
+    color:white; 
+    margin-top:37px;
+    text-align:center; 
+    box-shadow: 10px 10px 5px cyan;
+}  
+
+.img1{
+    border-radius:50%;
+}
+.img3{
+   margin:15px;
+   border-radius:50%;
+   background:black;
+   
+          
+}
+.box8{
+  width: 518px;
+  border:2px solid #00bacf;
+  border-radius:24px;
+ margin:0 auto;
+  background:#00bacf;
+  text-align: center;
+  
+
+  
+}
+footer{
+  min-height: 5vw;
+  background: black;
+  color: grey;
+  text-align: center;
+  bottom: 0;
+
+}
+footer p{
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+@media screen and (max-width: 600px) {
+  .bar a:not(:first-child) {display: none;}
+  .bar a.icon {
+    float: right;
+    display: block;
+  }
+  .box{width: 324px;}
+  .box6{width:324px;}
+  .box2, .box3, .box4, .box5{
+    width: 280px;
+  }
+  .box1{
+    width: 324px;
+    
+  }
+.box8{
+  width: 324px;}
+}
+
+@media screen and (max-width: 600px) {
+  .bar.responsive {position: relative;}
+  .bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.btn{
+  border:none;
+  padding: 4px 7px;
+  background-color: #00bed4;
+  color: white;
+  border-radius: 2px;
+  margin-top: -4px;
+}
+.btn:hover{
+  box-shadow: 0px 0px 7px 1px #00bed4;
+  background-color: black;
+  color:  #00bed4;
+}
+.box7 p{
+   font-family: 'Alegreya Sans SC', sans-serif;
+}
+</style>
+    </head>
+    <body>
+     <div class="bar" id="Topbar">
+  <a href="website.html" class="active"><img src="https://nstidehradun.files.wordpress.com/2020/05/logo.png"></a>
+  <a href="login.php"><button class="btn">Sign In</button>
+  <a href="contact_us.html">Contact</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about_us.html">About us</a>
+  <a href="website.html">Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    <p class="img2">Being human in the digital world is about building a digital world for humans</p>
+    <div class="box6"> 
+   
+<h1>About Us<hr width="300px"/></h1>
+<div class="box7">
+  <img src="https://k210.org/images/content/uploads/klwp/scr01.jpg" width="300px" style="margin-top: 37px;">
+    <p >We strongly believe in maintaining the highest integrity,delivering consistent productivity along with top-notch quality, and be easily accessible at all times.</p>
+
+<p>We have always shared every bit of success in achieving every single milestone, and accomplishing project deliverables with both clients and employees. 
+<p>We help organizations to makeover their business along with new technology too fast track their way to success.</p>
+    
+<p> We have a pool of skilled innovative talents for Machine Learning, Cloud Computing, IoT, Artificial Intelligence, and more to enlarge your customer base for web and mobile app development.
+</p>
+</div>
+</div>
+    <div class="box">
+   <h1>Our Purpose<hr width="250px" /></h1> 
+   <p>Providing Inovative and Awsome Solution to Empower Digital Transformation of Our Client</p></div>
+   <br />
+   <div class="box1">
+   <h1>Our Values!</h1>
+   <p>We are here to introduce whole world by our innovative policy, Integrity towards technolgical skills and knowledge, unbreakble bond of trusts and allegiance our clients . </p>
+   <div class="box2">
+       <h2>Innovation</h2>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKOyuz11x7IXAT9B-_Xl_rTNDV9NiUF4mn-7qA-ue5ET_QEhL8&usqp=CAU.jpg" width="200px" height="200px" class="img1" alt=" " />
+       <p>No two client need the same things so we will innovate new for each project.  </p>
+   </div>
+   <div class="box3">
+      <h2>Integrity</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzXEdhdFa43m1k6cZcisHM_9bkNdPYG_orgS8wEJd_G8vDRRCX&usqp=CAU.jpg" width="200px" height="200px" class="img1" alt=" " />
+      <p>It is client's proprietray information about their business strategy, we will handle all information with utmost care and confidentialy. </p>
+   </div>
+   <div class="box4">
+       <h2>Trust</h2>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUbU2lI9iuEmwkwiLYg7UEAsJvsO9MMipXrE6jBDMfssodbu85&usqp=CAU.jpg" width="200px" height="200px" class="img1" alt=" "/>
+       <p>We value our client's trust on us, which is earned overtime because of our earnest performance.We are here to uphold this trust with them.</p>
+   </div>
+   <div class="box5">
+       <h2>Allegiance</h2>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaB_64df4YE7KKMyZe9TPPMuvkkrdaEquc_4J-_k5SPgdRBpq2&usqp=CAU.jpg" width="200px" height="200px" class="img1" alt=" " />
+       <p>There is a unique relation between our succsess and our client,and that is why our success follows their succsess.</p>
+   </div>
+   <p>Thank You</p>
+   </div>
+   <br>
+   <div class="box8">
+  <h2 style="font-family: 'Yesteryear', cursive;">Follow us on!</h2>
+  <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXfXVMMbUJR2ERbXAzLTz5YEbHtoGXRTV2irQzGfDG23X_oVvm&usqp=CAU.jpg" width="37px" height="32px" class="img3" align="center" alt=" " /></a>
+  
+ <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZD3Oq7t0gl5qrhUN8nVnm_9THEYaGFbiFBK3zYRcSLxoN0ADy&usqp=CAU.jpg" width="37px" height="32px" class="img3" align="center" alt=" " /></a>
+  
+  <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRrqWGrt5Y321k7KsPWj_VmTEjpo9xoRAOP9j-RXtIBYYbLuQGj&usqp=CAU.jpg" width="37px" height="32px" class="img3" align="center" alt=" " /></a>
+  <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQF_-IheMgBK6a2450sRQ0uXRzvt04TL6jbGRZnp5NGxnoZM3_z&usqp=CAU.jpg" width="37px" height="32px" class="img3" align="center" alt=" " /></a>
+  
+ <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaBSPCQ85ZBKcdvEpoDE4jRE6HpSt8rmlpSeRyFD8hNPxgN_1b&usqp=CAU.jpg" width="37px" height="32px" class="img3" align="center" alt=" " /></a>
+ 
+<a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRx2vexrriQDwFxGQh7V2n0VvIJ2H4hyIGxVHcnszjVSmdwYGFe&usqp=CAU.jpg" width="37px" height="32px" class="img3" align="center" alt=" " /></a> 
+  </div>
+  <footer >
+  <p>Copy Right 2020 © All Rights Reserved</p>
+</footer>
+    </body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("Topbar");
+  if (x.className === "bar") {
+    x.className += " responsive";
+  } else {
+    x.className = "bar";
+  }
+}
+</script>
+</html>

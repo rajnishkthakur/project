@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOBILE APP DEVELOPMENT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Orbitron:wght@700&family=Tangerine:wght@700&family=Yesteryear&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+  <style type="text/css">
+    /*font-family: 'Cookie', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Tangerine', cursive;*/
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+
+      
+}
+.back{
+  background-image: url(https://cdn.pling.com/img/b/0/a/8/11323d357de2aed9e1aec693c0e341a3e210.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      position: relative;
+      min-height: 100vh;
+}
+.bar {
+  overflow: hidden;
+  background-color: transparent;
+  padding-top: 8px;
+}
+
+.bar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.bar a:hover {
+  border-bottom:2px solid #00bed4;
+  color: #00bed4;
+}
+
+.bar a.active {
+  float: left;
+  /*background-color: #033354;*/
+  color: white;
+}
+
+.bar .icon {
+  display: none;
+}
+.bar img{
+  width: 80px;
+}
+.heading{
+  color:white;
+  font-family: 'Orbitron', sans-serif;
+}
+.first{
+  float:left;
+    margin-top:120px;
+width: 350px;
+padding-left: 60px;
+}
+.first p{
+
+  color:white;
+  font-size: 40px;
+  font-family: 'Yesteryear', cursive;
+  border-bottom: 2px solid #00bed4;
+  padding-left: 20px;  
+}
+@media screen and (max-width: 600px) {
+  .bar a:not(:first-child) {display: none;}
+  .bar a.icon {
+    float: right;
+    display: block;
+  }
+  .about{
+    max-width: 230px;
+    padding-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bar.responsive {position: relative;}
+  .bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .first{
+    padding: 10vw;
+    width: 275px;
+  }
+  .box, .boxa{
+    display: none;
+  }
+  .seconddiv{
+
+      
+      display: inline-block;
+      
+  }
+
+  .third{
+    
+  }
+  .third img{
+    width: 80%;
+    display: block;
+  margin-left: 30px;
+  }
+  
+}
+
+.box{
+  float:right;
+  width:300px;
+  height:350px;
+  border: 3px solid white;
+  margin: 72px 78px 0px 0px;
+
+}
+.boxa{
+  float:left ;
+  width:300px;
+  height:350px;
+  position: absolute;
+  display: flex;
+  
+  margin: 27px 80px 0px 23px;
+  
+
+}
+.boxa img{
+  width: 300px;
+  border: 3px solid black;
+  box-shadow: 0px 0px 4px 1px #00bed4;
+}
+.second{
+  background-color: #fefefe;
+  min-height: 100vh;
+  text-align: center;
+
+}
+.qualities{
+  background-color: white;
+  color: #7d898a;
+  width: 330px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+margin: 15px;
+display: inline-block;
+
+}
+.qualities:hover
+  .icon{
+    background-color: black;
+    color: white;}
+
+.qualities .icon{
+  width: 50px;
+  height: 50px;
+  background-color: #f4f4f4;
+  color: black;
+  font-size: 27px;
+  border-radius: 50%;
+  padding:25px 16px 4px 15px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+
+.third{
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  vertical-align: middle;
+  float: left;
+  display: inline-block;
+}
+.seconddiv{
+ margin-left:0px;
+}
+
+.third img{
+  margin-top: 100px;
+  margin-bottom: auto;
+  float: left;
+  display: inline-block;
+  box-shadow:-21px 6px 28px 0px #00bed4;
+}
+
+.about{
+  width: 400px;
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-bottom: 64px;
+  color: white;
+  float: left;
+  display: inline-block;
+}
+.forth{
+  width: 100%;
+  min-height: 50vh;
+  background-color: #f7f7f7;
+  display: inline-block;
+  clear: left;
+  text-align: center;
+  padding-top: 100px;
+}
+.forth p{
+  padding: 0 40px;
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  min-height: 5vw;
+  background: black;
+  color: grey;
+  text-align: center;
+
+}
+footer p{
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.btn{
+  border:none;
+  padding: 4px 7px;
+  background-color: #00bed4;
+  color: white;
+  border-radius: 2px;
+  margin-top: -4px;
+  text-transform: uppercase;
+}
+.btn:hover{
+  box-shadow: 0px 0px 7px 1px #00bed4;
+  background-color: black;
+  color:  #00bed4;
+}
+
+.btn-1 {
+  background-color: #00bed4;
+}
+.btn-1 .round {
+  background-color: #53d5ed;
+}
+.type-1 a {
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 12px 53px 12px 23px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.type-1 a span {
+  position: relative;
+  z-index: 3;
+}
+.type-1 a .round {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+.type-1 a .round i {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -4px;
+  transition: all 0.3s;
+}
+
+.txt {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.type-1 a:hover {
+  padding-left: 48px;
+  padding-right: 28px;
+}
+.type-1 a:hover .round {
+  width: calc(100% - 6px);
+  border-radius: 7px;
+}
+.type-1 a:hover .round i {
+  left: 12%;
+}
+  </style>
+</head>
+<body>
+  <section class="back">
+<div class="bar" id="Topbar">
+  <a href="website.html" class="active"><img src="https://nstidehradun.files.wordpress.com/2020/05/logo.png"></a>
+  <a href="login.php"><button class="btn">Sign In</button>
+  <a href="contact_us.html">Contact</a>
+  <a href="Portfolio.html">Portfolio</a>
+  <a href="about_us.html">About us</a>
+  <a href="website.html">Home</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="first">
+  <p>Hi there!</p>
+<h1 class="heading">LOOKING FOR AN APP DEVELOPER?</h1>
+<div class="type-1">
+  <div>
+    <a href="contact_us.html" class="btn-1">
+      <span class="txt">Contact us</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="box" data-aos="fade-left">
+  <div class="boxa" data-aos="fade-right">
+  <img src="https://nstidehradun.files.wordpress.com/2020/05/pic.png" data-aos="fade-right" data-aos-duration="1700">
+</div>
+</div>
+
+</section>
+<div class="second" data-aos="fade-up" data-aos-duration="1000">
+  <p style="text-align: center;
+   font-family: 'Yesteryear', cursive;
+   font-size: 8vw;
+   color: #2a2a2a;"> Our Speciality</p>
+  <section class="seconddiv" >
+
+  <div class="qualities"  data-aos="fade-up">
+   <span class="icon"> <i class="fa fa-mobile" ></i></span>
+   <H2>Mobile App Design</H2>
+   <p>Elegent & Modern App Designs</p><br>
+   <p><b>SKETCH & FARMER</b></p>
+  </div>
+  <div class="qualities"  data-aos="fade-up">
+   <div class="icon"> <i class="fas fa-desktop"></i></div>
+   <H2>Web Design</H2>
+   <p>Stylish & Modern Web Designs</p><br>
+   <p><b>HTML, CSS & JS</b></p>
+  </div>
+  <div class="qualities"  data-aos="fade-up">
+   <span class="icon"> <i class="fas fa-bezier-curve" ></i></span>
+   <H2>Graphic Design</H2>
+   <p>Colored & Modern Graphic Designs</p><br>
+   <p><b>ADOBE SUITES</b></p>
+  </div>
+  <div class="qualities"  data-aos="fade-up">
+   <span class="icon"> <i class="fas fa-pen-nib" ></i></span>
+   <H2>Logo Design</H2>
+   <p>Attractive & Modern Logo Designs</p><br>
+   <p><b>ILLUSTRATOR & COREL</b></p>
+  </div>
+  <div class="qualities"  data-aos="fade-up">
+   <span class="icon"> <i class="far fa-file-alt" ></i></span>
+   <H2>Branding</H2>
+   <p>Lookwise Best Branding</p><br>
+   <p><b>ADOBE SUITES</b></p>
+  </div>
+  <div class="qualities"  data-aos="fade-up">
+   <span class="icon"> <i class="fab fa-accusoft" ></i></span>
+   <H2>Brochure</H2>
+   <p>Elegent & Modern Brochure Designs</p><br>
+   <p><b>BY SKETCH & FARMER</b></p>
+  </div>
+  </section>
+</div>
+<div class="third" data-aos="fade-up" data-aos-duration="1000">
+  <img src="https://image.freepik.com/free-photo/reading-adult-person-entrepreneur-job_1262-2693.jpg" >
+  <div class="about">
+  <p style="font-family: 'Yesteryear', cursive; font-size: 40px;">About Us </p>
+  <p> We have a large portfolio for UI , Web & Graphic Designs. We can strongly assure you that we'll be able to provide you according to your desire. We are in this field since last 6+ years so it would be great if we get a chance to prove ourself to provide you better quality service..<hr width="100px"></p>
+  </div>
+</div>
+<div class="forth" data-aos="fade-up" data-aos-duration="1000">
+  <h1 style="font-family: 'Yesteryear', cursive;">Testimonials</h1>
+  <p>CODEX members definitely goes that extra mile to keep you satisfied, 100% recommended, always available, very patient and flexible team, even though we kept asking for several revisions and versions, Job completed and ready to start our next project with him. Extra Bonus well deserved. AAA+</p>
+  <p><b>SAGAR SHARMA</b> <br>(5* RESTRO OWNER)</p>
+</div>
+
+<footer >
+  <p>Copy Right 2020 © All Rights Reserved</p>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("Topbar");
+  if (x.className === "bar") {
+    x.className += " responsive";
+  } else {
+    x.className = "bar";
+  }
+}
+</script>
+</html>
