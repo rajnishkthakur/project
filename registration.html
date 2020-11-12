@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+  <style>  
+
+
+ body{
+            text-align: center;
+            background-image: url("https://wallpaperaccess.com/full/663213.jpg");
+            background-attachment: fixed;
+        }
+
+
+        .fname, .lname, #email, #phone, .dob, .pic, select, textarea{
+  width: 60%;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-bottom: 2px solid black;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 7px 20px 7px 20px;
+  outline: none;
+  
+}
+label{
+    width:100px;
+    display: inline-block;
+    text-align:left;
+}
+.head{
+  font-family: 'Great Vibes', cursive;
+  color:black;
+}
+.back{
+    
+  padding: 10px;
+  margin: 20px 0px;
+}
+.submit{
+    border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  outline : none;
+
+}
+label{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
+elect {
+    width: 60%;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-bottom: 2px solid black;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 7px 20px 7px 20px;
+  outline: none;
+  margin-left:121px;
+  
+}
+</style>
+</head>
+<body>
+
+<div class="back">
+    <h1 class='head'>Fill Details</h1>
+    <br />
+        <form onsubmit="return validate()" id="enquiry_form" role="form" method="post" action="registration.html">
+            <label>Userame</label>
+            <input type="text"  class="fname" placeholder="Username" name="name" autofocus required>
+            <br>
+            <br>
+            
+            
+            <label>Email<span style="color:red">*</span></label>
+            <input type="email"  class="email" placeholder="Email" id="email" name="email" required>
+            <br>
+            <br>
+            <label>Password<span style="color:red">*</span></label>
+            <input type="password" name="pass" class="email" placeholder="Password" id="email" required>
+            <br>
+            <br>
+            <label>Mobile <span style="color:red">*</span> </label>
+            <input type="tel" name="phone"  placeholder="Mobile" id="phone" maxlength="10" required>
+
+            <br>
+            <br>
+            <label>Date of Birth</label>
+            <input type="date" name="birth" class="dob" placeholder="Date of Birth">
+            
+            <br>
+            <br>
+            
+           <button class="submit" value="register" name="register">Submit</button>
+           <br>
+                    <br>
+            <center><b>Already registered ?</b> <br> <br></b><a href="login.html">Login here</a></center>
+        </form>
+    </div>
+
+    
+    
+    <script>
+        function validate(){
+    var phone = document.getElementById("phone").value;
+      var mail = document.getElementById("email").value;
+       var regx1 = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})$/;
+    var regx = /^[7-9]\d{9}$/;
+    if (regx.test(phone))
+    {
+        document.getElementById("phone").style.border="solid 2px green";
+        return true ;
+    }
+    
+    else if(regx1.test(mail))
+    {
+        document.getElementById("email").style.border="solid 2px green";
+        return true ;
+    }
+    
+    else {
+    document.getElementById("email").style.border="2px solid red";
+       document.getElementById("phone").style.border="2px solid red";
+       return false ;
+    }
+
+
+}
+    </script>
+    </body>
+</html>
